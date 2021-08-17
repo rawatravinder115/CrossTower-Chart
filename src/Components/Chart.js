@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
+
+import { Bar } from "react-chartjs-2";
 
 const Chart = () => {
 	const [btcusd, setBtcusd] = useState({});
@@ -18,7 +20,7 @@ const Chart = () => {
 			console.log(maxPrice);
 		}
 
-        console.log(maxPrice);
+		console.log(maxPrice);
 		setHightest(maxPrice);
 		console.log(hightest);
 	}
@@ -27,7 +29,20 @@ const Chart = () => {
 		fetchData();
 	}, []);
 
-	return 1;
+	return (
+		<div>
+			<Bar
+				data={{
+					labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+				}}
+				height={500}
+				width={50}
+                options ={{
+                    maintainAspectRatio : false,
+                }}
+			/>
+		</div>
+	);
 };
 
 export default Chart;
