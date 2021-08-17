@@ -33,7 +33,7 @@ const Chart = () => {
 		<div>
 			<Bar
 				data={{
-					labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+					// labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
 				}}
 				height={500}
 				width={50}
