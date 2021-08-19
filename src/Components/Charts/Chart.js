@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Bar } from "react-chartjs-2";
 
@@ -29,17 +29,48 @@ const Chart = () => {
 		fetchData();
 	}, []);
 
+	const data = [
+		{ x: "Jan", net: 100, cogs: 50, gm: 50 },
+		{ x: "Feb", net: 120, cogs: 55, gm: 75 },
+	];
+	const cfg = {
+		type: "bar",
+		data: {
+			labels: ["Jan", "Feb"],
+			datasets: [
+				{
+					label: "Net sales",
+					data: data,
+					parsing: {
+						yAxisKey: "net",
+					},
+				},
+				{
+					label: "Cost of goods sold",
+					data: data,
+					parsing: {
+						yAxisKey: "cogs",
+					},
+				},
+				{
+					label: "Gross margin",
+					data: data,
+					parsing: {
+						yAxisKey: "gm",
+					},
+				},
+			],
+		},
+	};
+
 	return (
 		<div>
 			<Bar
-				data={{
-					// labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-				}}
 				height={500}
 				width={50}
-                options ={{
-                    maintainAspectRatio : false,
-                }}
+				options={{
+					maintainAspectRatio: false,
+				}}
 			/>
 		</div>
 	);

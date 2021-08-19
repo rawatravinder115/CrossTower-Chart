@@ -1,6 +1,12 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
   background-color: whitesmoke;
+}
+
+.chart{
+  width: 1200px;
 }
 
 .App-logo {

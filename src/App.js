@@ -1,11 +1,13 @@
 import './App.css';
-import Chart from './Components/Chart';
+import LineChart from './Components/Charts/LineChart';
 
 function App() {
   return (
     <div className="App">
+      <div className="chart">
       <h1>CrossTower Chart</h1>
-      <Chart />
+				<LineChart />
+			</div>
     </div>
   );
 }
