@@ -209,7 +209,11 @@ const LineChart = () => {
 		47016.86, 45975.63, 47346.63, 47179.08,
 	];
 	let inr = 74.42945;
-	
+	for (let index = 0; index < array.length; index++) {
+		const element = array[index] * inr;
+		console.log(element);
+		
+	}
 
 	
 		
