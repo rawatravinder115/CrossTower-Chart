@@ -204,7 +204,8 @@ const LineChart = () => {
 
 	// console.log(arr);
 
-	
+	let array = [];
+		
 
 	return <Line data={data} options={options} />;
 };
