@@ -1,5 +1,6 @@
 import './App.css';
 import LineChart from './Components/Charts/LineChart';
+import Table from './Components/Table/Table';
 
 function App() {
   return (

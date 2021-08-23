@@ -129,7 +129,7 @@ const LineChart = () => {
 		labels: label,
 		datasets: [
 			{
-				labels: "CrossTower",
+				label: "CrossTower",
 				data: [
 					3670307, 4042102, 4107270, 3969679, 4085114, 4277743, 4287138,
 					4190543, 4225382, 3942238, 4246816, 4160198, 4219453, 4334895,
@@ -206,16 +206,16 @@ const LineChart = () => {
 
 	// console.log(arr);
 
-	let array = [42434.57, 40278.71, 38366.73, 39951.49, 41064.23, 43211.86, 44760.39,
-		45180.34, 46438.54, 46126, 46599.17, 46233.98, 47701.38, 47784.08, 47776.16,
-		47016.86, 45975.63, 47346.63, 47179.08,
-	];
-	let inr = 74.42945;
-	for (let index = 0; index < array.length; index++) {
-		const element = array[index] * inr;
-		console.log(element);
+	// let array = [42434.57, 40278.71, 38366.73, 39951.49, 41064.23, 43211.86, 44760.39,
+	// 	45180.34, 46438.54, 46126, 46599.17, 46233.98, 47701.38, 47784.08, 47776.16,
+	// 	47016.86, 45975.63, 47346.63, 47179.08,
+	// ];
+	// let inr = 74.42945;
+	// for (let index = 0; index < array.length; index++) {
+	// 	const element = array[index] * inr;
+	// 	console.log(element);
 		
-	}
+	// }
 
 	
 		
